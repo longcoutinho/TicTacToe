@@ -17,6 +17,8 @@ public class Cell extends GameObject {
     public final static int numberOfCols = 50;
     public final static int numberOfRows = 50;
     private GameSurface gameSurface;
+    public Cell() {
+    }
     public Cell(GameSurface gameSurface, Bitmap image, float x, float y) {
         super(image, x , y);
         this.gameSurface = gameSurface;

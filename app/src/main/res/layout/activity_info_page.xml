@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoPage"
+    android:background="@drawable/default_background"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_infoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:text="Hello, Long"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_matchwin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_infoname"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bt_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/tv_infoname"
+        android:onClick="newsignout"
+        android:text="Sign out" />
+
+    <Button
+        android:id="@+id/bt_createroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_infoname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:onClick="newcreateroom"
+        android:text="CREATE ROOM" />
+
+    <Button
+        android:id="@+id/bt_findroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_infoname"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/bt_createroom"
+        android:onClick="newfindroom"
+        android:text="FIND ROOM" />
+
+    <EditText
+        android:id="@+id/et_roomid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_createroom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter room's ID"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/bt_joinroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_createroom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/et_roomid"
+        android:onClick="newjoinroom"
+        android:text="JOIN ROOM" />
+
+    <TextView
+        android:id="@+id/tv_notifyinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_roomid"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp" />
+</RelativeLayout>

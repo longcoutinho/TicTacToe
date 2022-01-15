@@ -28,6 +28,7 @@ public class Home extends AppCompatActivity {
             }
             else if (event.getAction() == MotionEvent.ACTION_UP) {
                 button_play_online.setCompoundDrawablesRelativeWithIntrinsicBounds(play_online_img, null, null, null);
+                playonline(v);
             }
             // TODO Auto-generated method stub
             return false;
@@ -85,5 +86,10 @@ public class Home extends AppCompatActivity {
         Intent newintent = new Intent(this, PlayWithBot.class);
         startActivity(newintent);
         menu_type = 1;
+    }
+    public void playonline(View v) {
+        Intent newintent = new Intent(this, LoginPage.class);
+        startActivity(newintent);
+        menu_type = 3;
     }
 }

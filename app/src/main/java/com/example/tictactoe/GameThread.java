@@ -2,6 +2,7 @@ package com.example.tictactoe;
 
 import android.graphics.Canvas;
 import android.os.Handler;
+import android.util.Log;
 import android.view.SurfaceHolder;
 
 public class GameThread extends Thread {
@@ -28,7 +29,7 @@ public class GameThread extends Thread {
                     this.gameSurface.draw(canvas);
                 }
             }catch (Exception E) {
-                // nothing
+                //Log.v("long", E + "");
             }finally {
                 if (canvas != null) {
                     //Unlock canvas

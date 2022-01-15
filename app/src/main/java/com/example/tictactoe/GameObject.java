@@ -13,6 +13,8 @@ public abstract class GameObject {
     private float startY;
     public float start_game_dragX;
     public float start_game_dragY;
+    public GameObject() {
+    }
     public GameObject(Bitmap image, float x, float y) {
         this.image = image;
         this.x = x;

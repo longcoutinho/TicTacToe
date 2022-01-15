@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="facebook_app_id">1283833718782102</string> <string name="fb_login_protocol_scheme">fb1283833718782102</string>
 </resources>
